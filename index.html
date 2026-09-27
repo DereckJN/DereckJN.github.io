@@ -63,7 +63,7 @@
         <p class="eyebrow" data-i18n="hero.eyebrow">Portafolio · Ingeniería en Software</p>
         <h1>Dereck <span class="iris-text">Jara Núñez</span></h1>
         <p class="role" data-i18n="hero.role">Desarrollador Full-Stack · .NET 9 · Vue 3 · MySQL · Azure</p>
-        <p class="lede" data-i18n="hero.lede">Construyo sistemas de negocio de punta a punta, desde el esquema de base de datos hasta la interfaz. En Ópticas DRmax trabajé en el sistema de gestión de una cadena de ópticas y en su migración de monolito a microservicios, donde además revisé e integré el código de todo el equipo.</p>
+        <p class="lede" data-i18n="hero.lede">Construyo sistemas de negocio de punta a punta, desde el esquema de base de datos hasta la interfaz. En Ópticas DRmax trabajé en el sistema de gestión de una cadena de ópticas y en su migración de monolito a microservicios.</p>
         <div class="contact">
           <a class="chip primary" href="assets/CV_Dereck_Jara_Nunez_ES.pdf" target="_blank" rel="noopener" data-i18n="hero.cv" data-i18n-attr="href:hero.cvHref">Ver CV (PDF)</a>
           <button class="chip" type="button" data-copy="jaradereck1@gmail.com">jaradereck1@gmail.com <span aria-hidden="true">⧉</span></button>
@@ -120,22 +120,20 @@
         <aside>
           <span class="co">Ópticas DRmax</span>
           <span class="when" data-i18n="exp.when">Julio 2026 – Octubre 2026</span>
-          <span class="where" data-i18n="exp.role">Desarrollador Full-Stack · Tech lead de facto en el ecosistema de microservicios</span>
+          <span class="where" data-i18n="exp.role">Desarrollador Full-Stack · Monolito y ecosistema de microservicios</span>
         </aside>
         <div class="body">
           <div class="stats">
-            <div class="stat"><b>978</b><span data-i18n="exp.st1">commits en total entre los dos sistemas</span></div>
-            <div class="stat"><b>247</b><span data-i18n="exp.st2">pull requests del equipo revisados e integrados</span></div>
-            <div class="stat"><b>+139K</b><span data-i18n="exp.st3">líneas insertadas en commits propios</span></div>
-            <div class="stat"><b>7</b><span data-i18n="exp.st4">microservicios .NET 9 con Clean Architecture</span></div>
+            <div class="stat"><b>2</b><span data-i18n="exp.st1">sistemas en producción: el monolito y su reemplazo</span></div>
+            <div class="stat"><b>7</b><span data-i18n="exp.st2">microservicios .NET 9 con Clean Architecture</span></div>
+            <div class="stat"><b>5</b><span data-i18n="exp.st3">dominios de negocio: laboratorio, servicio al cliente, ventas, pacientes y permisos</span></div>
           </div>
 
           <div class="projects">
             <article class="proj">
               <span class="kind" data-i18n="p1.kind">Monolito · jul – sep 2026</span>
               <h3>OpticaSystemGLD</h3>
-              <p data-i18n="p1.desc">Sistema de gestión integral en .NET 9 + Vue 3 sobre Azure, con un equipo de 6 desarrolladores. Fui el segundo mayor contribuidor del proyecto.</p>
-              <div class="num"><span data-i18n="p1.n1"><b>142</b> commits</span><span data-i18n="p1.n2"><b>+16K</b> líneas</span><span data-i18n="p1.n3"><b>19</b> issues</span></div>
+              <p data-i18n="p1.desc">Sistema de gestión integral en .NET 9 + Vue 3 sobre Azure, con un equipo de 6 desarrolladores.</p>
               <ul>
                 <li data-i18n="p1.l1"><b>Expediente clínico</b> de punta a punta: entidad, servicio, API REST, componente Vue y permisos RBAC.</li>
                 <li data-i18n="p1.l2"><b>Módulo de Reportes</b> reutilizable con filtro por sucursal, vista previa paginada y exportación a Excel (ClosedXML, tope de 50 000 filas).</li>
@@ -149,14 +147,13 @@
             <article class="proj">
               <span class="kind" data-i18n="p2.kind">Microservicios · jul – sep 2026</span>
               <h3>Optica Ecosystem</h3>
-              <p data-i18n="p2.desc">Monorepo de 7 microservicios que reemplaza el monolito de forma incremental. Además de programar, revisé e integré los PRs de todo el equipo.</p>
-              <div class="num"><span data-i18n="p2.n1"><b>589</b> commits directos</span><span data-i18n="p2.n2"><b>+123K</b> líneas</span><span data-i18n="p2.n3"><b>3 300+</b> archivos</span></div>
+              <p data-i18n="p2.desc">Monorepo de 7 microservicios que reemplaza el monolito de forma incremental.</p>
               <ul>
-                <li data-i18n="p2.l1"><b>Multitenancy</b> por <code>empresa_id</code> con query filters globales de EF Core, replicada en Tickets, Pacientes y Ventas, con pruebas de aislamiento entre empresas.</li>
-                <li data-i18n="p2.l2"><b>Estandarización de permisos RBAC</b> con el atributo <code>[RequierePermiso]</code> y validación al arrancar el servicio.</li>
-                <li data-i18n="p2.l3"><b>Módulo SAC</b> construido desde cero: bandeja Kanban, timeline del caso, adjuntos y catálogos jerárquicos.</li>
-                <li data-i18n="p2.l4"><b>Programa de referidos</b> "Familia y Amigos": motor de cupones, landing pública y panel CRM con reportes.</li>
-                <li data-i18n="p2.l5">Generación de órdenes en lote en paralelo, lo que eliminó los timeouts.</li>
+                <li data-i18n="p2.l1">Implementé <b>multitenancy</b> por <code>empresa_id</code> con query filters globales de EF Core, replicada en Tickets, Pacientes y Ventas, con pruebas de aislamiento entre empresas.</li>
+                <li data-i18n="p2.l2">Migré servicios al <b>esquema estandarizado de permisos RBAC</b>, con el atributo <code>[RequierePermiso]</code> y validación al arrancar.</li>
+                <li data-i18n="p2.l3">Construí el <b>módulo SAC</b> desde cero: bandeja Kanban, timeline del caso, adjuntos y catálogos jerárquicos.</li>
+                <li data-i18n="p2.l4">Desarrollé el <b>programa de referidos</b> "Familia y Amigos": motor de cupones, landing pública y panel CRM con reportes.</li>
+                <li data-i18n="p2.l5">Paralelicé la generación de órdenes en lote para evitar timeouts.</li>
               </ul>
               <div class="tags"><span class="tag">CQRS-lite</span><span class="tag">YARP</span><span class="tag">JWT</span><span class="tag">Docker Compose</span><span class="tag">Azure App Service</span><span class="tag">ADR</span></div>
             </article>
@@ -236,7 +233,7 @@
           <li data-i18n="dom.auth3">Validaciones al arrancar que detectan configuraciones inválidas</li>
         </ul></div>
         <div class="dom"><h3 data-i18n="dom.qa">Calidad</h3><ul>
-          <li data-i18n="dom.qa1">Pruebas de aislamiento multitenant, que el equipo usa como referencia para servicios nuevos</li>
+          <li data-i18n="dom.qa1">Pruebas de aislamiento multitenant entre empresas</li>
           <li data-i18n="dom.qa2">Corrección de tests inestables por zona horaria (UTC vs. hora de Costa Rica)</li>
           <li data-i18n="dom.qa3">Documentación como código: CLAUDE.md, ADRs y specs de diseño</li>
         </ul></div>
@@ -247,14 +244,14 @@
     <section aria-labelledby="t-adr">
       <div class="sec-head">
         <p class="eyebrow" data-i18n="adr.eyebrow">Decisiones de arquitectura</p>
-        <h2 id="t-adr" data-i18n="adr.title">Decisiones que ayudé a tomar</h2>
-        <p class="lede" data-i18n="adr.lede">Cada decisión quedó registrada como un Architecture Decision Record (ADR) versionado junto al código.</p>
+        <h2 id="t-adr" data-i18n="adr.title">Decisiones de arquitectura que implementé</h2>
+        <p class="lede" data-i18n="adr.lede">El equipo registraba sus decisiones como Architecture Decision Records (ADR) versionados junto al código. Estas son las que me tocó implementar.</p>
       </div>
       <div class="adrs">
         <div class="adr"><span class="id">ADR-0010</span><h3 data-i18n="adr.a1t">Estrategia de multitenancy</h3><p data-i18n="adr.a1">Aislamiento por <code>empresa_id</code> con filtros globales de EF Core, respaldado por <code>TenantIsolationTests</code>.</p></div>
-        <div class="adr"><span class="id">ADR-0017</span><h3 data-i18n="adr.a2t">Taxonomía de permisos RBAC</h3><p data-i18n="adr.a2">Lideré la migración de Auth y RRHH de roles ad-hoc a un catálogo estandarizado de permisos.</p></div>
+        <div class="adr"><span class="id">ADR-0017</span><h3 data-i18n="adr.a2t">Taxonomía de permisos RBAC</h3><p data-i18n="adr.a2">Migré los servicios de Auth y RRHH de roles ad-hoc al catálogo estandarizado de permisos.</p></div>
         <div class="adr"><span class="id">ADR-0004 · 0006 · 0009</span><h3 data-i18n="adr.a3t">Una base de datos por servicio</h3><p data-i18n="adr.a3">Propiedad de datos por servicio y eliminación de foreign keys heredadas del monolito.</p></div>
-        <div class="adr"><span class="id">ADR-0018</span><h3 data-i18n="adr.a4t">Gestiones pasa a Tickets</h3><p data-i18n="adr.a4">El módulo de Gestiones pasa a ser propiedad del servicio de Tickets.</p></div>
+        <div class="adr"><span class="id">ADR-0018</span><h3 data-i18n="adr.a4t">Gestiones pasa a Tickets</h3><p data-i18n="adr.a4">Migré el módulo de Gestiones al servicio de Tickets.</p></div>
       </div>
     </section>
 
@@ -320,7 +317,7 @@
         <a class="chip" href="https://github.com/DereckJN" target="_blank" rel="noopener">github.com/DereckJN ↗</a>
         <span class="chip">+506 6357-5896</span>
       </div>
-      <p class="small"><span data-i18n="foot.note">Las cifras salen del historial de Git de cada repositorio (julio – septiembre 2026).</span> © <span id="year">2026</span> Dereck Jara Núñez</p>
+      <p class="small"><span data-i18n="foot.note">El gráfico de archivos sale del historial de Git del ecosistema (julio – septiembre 2026).</span> © <span id="year">2026</span> Dereck Jara Núñez</p>
     </footer>
   </main>
 

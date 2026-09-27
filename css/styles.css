@@ -212,7 +212,7 @@ button.chip:hover, a.chip:hover { border-color: var(--accent); transform: transl
 .job .when { font-family: var(--mono); font-size: 13px; color: var(--accent); }
 .job .where { font-size: 14px; color: var(--ink-3); }
 .job .body { display: flex; flex-direction: column; gap: 28px; min-width: 0; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
 .stat { background: var(--surface); padding: 20px 16px; display: flex; flex-direction: column; gap: 8px; position: relative; }
 .stat b {
   font-family: var(--display); font-size: clamp(30px, 3.4vw, 40px); font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -.03em; line-height: 1;
@@ -412,7 +412,6 @@ button.chip:hover, a.chip:hover { border-color: var(--accent); transform: transl
 @media (max-width: 900px) {
   .nav .links { display: none; }
   .hero, .job, .acad article, .edu { grid-template-columns: 1fr; gap: 28px; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
   .diagram { grid-template-columns: 1fr; }
   .arrow svg { transform: rotate(90deg); }
   .projects, .domains, .adrs { grid-template-columns: 1fr; }
@@ -421,6 +420,7 @@ button.chip:hover, a.chip:hover { border-color: var(--accent); transform: transl
 }
 @media (max-width: 600px) {
   .wrap { gap: 76px; }
+  .stats { grid-template-columns: 1fr; }
   .hero { padding-top: 44px; }
   .svcs { grid-template-columns: repeat(2, 1fr); }
   .bar { grid-template-columns: 112px 1fr 38px; gap: 8px; font-size: 12px; }
