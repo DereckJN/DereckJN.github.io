@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dereck Jara Núñez · Full-Stack Developer</title>
+  <meta name="description" content="Portafolio de Dereck Jara Núñez, desarrollador full-stack (.NET 9, Vue 3, MySQL, Azure). Experiencia migrando un monolito a microservicios en Ópticas DRmax.">
+  <meta name="author" content="Dereck Jara Núñez">
+  <meta name="theme-color" content="#F3F5F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0D14" media="(prefers-color-scheme: dark)">
+
+  <!-- Vista previa al compartir el enlace (LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dereck Jara Núñez · Full-Stack Developer">
+  <meta property="og:description" content=".NET 9 · Vue 3 · MySQL · Azure. Migración de monolito a microservicios en Ópticas DRmax.">
+  <meta property="og:locale" content="es_CR">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Aplica el tema guardado antes de pintar, para evitar un parpadeo -->
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="nav">
+    <div class="in">
+      <a class="me" href="#top"><span class="mark" aria-hidden="true"></span>Dereck Jara Núñez</a>
+      <nav class="links" aria-label="Secciones" data-i18n-attr="aria-label:navLabel">
+        <a href="#experiencia" data-i18n="nav.exp">Experiencia</a>
+        <a href="#arquitectura" data-i18n="nav.arch">Arquitectura</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#academicos" data-i18n="nav.acad">Proyectos académicos</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Cambiar tema claro u oscuro" data-i18n-attr="aria-label:themeLabel">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main" class="wrap">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Portafolio · Ingeniería en Software</p>
+        <h1>Dereck <span class="iris-text">Jara Núñez</span></h1>
+        <p class="role" data-i18n="hero.role">Desarrollador Full-Stack · .NET 9 · Vue 3 · MySQL · Azure</p>
+        <p class="lede" data-i18n="hero.lede">Construyo sistemas de negocio de punta a punta, desde el esquema de base de datos hasta la interfaz. En Ópticas DRmax trabajé en el sistema de gestión de una cadena de ópticas y en su migración de monolito a microservicios, donde además revisé e integré el código de todo el equipo.</p>
+        <div class="contact">
+          <a class="chip primary" href="assets/CV_Dereck_Jara_Nunez_ES.pdf" target="_blank" rel="noopener" data-i18n="hero.cv" data-i18n-attr="href:hero.cvHref">Ver CV (PDF)</a>
+          <button class="chip" type="button" data-copy="jaradereck1@gmail.com">jaradereck1@gmail.com <span aria-hidden="true">⧉</span></button>
+          <a class="chip" href="https://github.com/DereckJN" target="_blank" rel="noopener">GitHub ↗</a>
+          <span class="chip">+506 6357-5896</span>
+        </div>
+      </div>
+
+      <div class="ticket-wrap">
+      <div class="lens" aria-hidden="true"></div>
+      <aside class="ticket" aria-label="Resumen del perfil" data-i18n-attr="aria-label:ticket.label">
+        <div class="top"><span data-i18n="ticket.title">Orden de trabajo</span><span>DJN-2026</span></div>
+        <dl>
+          <dt data-i18n="ticket.profile">Perfil</dt><dd>Full-Stack Developer</dd>
+          <dt data-i18n="ticket.status">Estado</dt><dd><span class="status" data-i18n="ticket.available">Disponible</span></dd>
+          <dt>Backend</dt><dd>C# · .NET 9 · EF Core</dd>
+          <dt>Frontend</dt><dd>Vue 3 · React · TypeScript</dd>
+          <dt data-i18n="ticket.data">Datos</dt><dd>MySQL · SQL Server</dd>
+          <dt data-i18n="ticket.langs">Idiomas</dt><dd data-i18n="ticket.langsVal">Español nativo · Inglés B1</dd>
+          <dt data-i18n="ticket.grad">Graduación</dt><dd data-i18n="ticket.gradVal">UTN · 2027 (esperada)</dd>
+          <dt data-i18n="ticket.location">Ubicación</dt><dd>Sarchí, Costa Rica</dd>
+        </dl>
+        <div class="code"><svg id="barcode" role="img" aria-label="DJN-2026"></svg><span class="scan" aria-hidden="true"></span></div>
+        <p class="foot" data-i18n="ticket.foot">Generado con jsbarcode, la librería que usé para imprimir órdenes de laboratorio</p>
+      </aside>
+      </div>
+    </section>
+
+    <!-- ================= TRAYECTORIA ================= -->
+    <section aria-labelledby="t-tray">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="tray.eyebrow">Trayectoria</p>
+        <h2 id="t-tray" data-i18n="tray.title">Seguimiento de la orden</h2>
+      </div>
+      <ol class="tracker">
+        <li class="fill" aria-hidden="true"></li>
+        <li class="step done"><span class="dot" aria-hidden="true">✓</span><div><b data-i18n="tray.s1">Técnico en Redes</b><span class="when">2020 – 2022</span></div></li>
+        <li class="step done"><span class="dot" aria-hidden="true">✓</span><div><b data-i18n="tray.s2">Ingreso a la UTN</b><span class="when">2023</span></div></li>
+        <li class="step done"><span class="dot" aria-hidden="true">✓</span><div><b data-i18n="tray.s3">Proyectos académicos full-stack</b><span class="when">2023 – 2026</span></div></li>
+        <li class="step now"><span class="dot" aria-hidden="true">●</span><div><b>Ópticas DRmax</b><span class="when" data-i18n="tray.s4when">jul – oct 2026</span></div></li>
+        <li class="step"><span class="dot" aria-hidden="true">5</span><div><b data-i18n="tray.s5">Bachillerato en Ing. en Software</b><span class="when" data-i18n="tray.s5when">2027 (esperado)</span></div></li>
+      </ol>
+    </section>
+
+    <!-- ================= EXPERIENCIA ================= -->
+    <section id="experiencia" aria-labelledby="t-exp">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="exp.eyebrow">Experiencia profesional</p>
+        <h2 id="t-exp" data-i18n="exp.title">Del monolito a los microservicios</h2>
+        <p class="lede" data-i18n="exp.lede">Dos sistemas en producción para una cadena de ópticas en Costa Rica: pacientes, citas, exámenes visuales, órdenes de laboratorio, facturación con SAP y servicio al cliente.</p>
+      </div>
+
+      <div class="job">
+        <aside>
+          <span class="co">Ópticas DRmax</span>
+          <span class="when" data-i18n="exp.when">Julio 2026 – Octubre 2026</span>
+          <span class="where" data-i18n="exp.role">Desarrollador Full-Stack · Tech lead de facto en el ecosistema de microservicios</span>
+        </aside>
+        <div class="body">
+          <div class="stats">
+            <div class="stat"><b>978</b><span data-i18n="exp.st1">commits en total entre los dos sistemas</span></div>
+            <div class="stat"><b>247</b><span data-i18n="exp.st2">pull requests del equipo revisados e integrados</span></div>
+            <div class="stat"><b>+139K</b><span data-i18n="exp.st3">líneas insertadas en commits propios</span></div>
+            <div class="stat"><b>7</b><span data-i18n="exp.st4">microservicios .NET 9 con Clean Architecture</span></div>
+          </div>
+
+          <div class="projects">
+            <article class="proj">
+              <span class="kind" data-i18n="p1.kind">Monolito · jul – sep 2026</span>
+              <h3>OpticaSystemGLD</h3>
+              <p data-i18n="p1.desc">Sistema de gestión integral en .NET 9 + Vue 3 sobre Azure, con un equipo de 6 desarrolladores. Fui el segundo mayor contribuidor del proyecto.</p>
+              <div class="num"><span data-i18n="p1.n1"><b>142</b> commits</span><span data-i18n="p1.n2"><b>+16K</b> líneas</span><span data-i18n="p1.n3"><b>19</b> issues</span></div>
+              <ul>
+                <li data-i18n="p1.l1"><b>Expediente clínico</b> de punta a punta: entidad, servicio, API REST, componente Vue y permisos RBAC.</li>
+                <li data-i18n="p1.l2"><b>Módulo de Reportes</b> reutilizable con filtro por sucursal, vista previa paginada y exportación a Excel (ClosedXML, tope de 50 000 filas).</li>
+                <li data-i18n="p1.l3"><b>Tracking visual y auditoría</b> de órdenes de laboratorio: checkpoints en la ficha del paciente y un log que cubre las 3 cascadas de estado desde manifiestos y los 5 cambios directos.</li>
+                <li data-i18n="p1.l4">Estados intermedios de manifiestos, clasificación GAM de sucursales y aprobación en lote con impresión en varios formatos.</li>
+                <li data-i18n="p1.l5">Corrección de un bug de producción por encoding de acentos en MySQL.</li>
+              </ul>
+              <div class="tags"><span class="tag">.NET 9</span><span class="tag">Vue 3</span><span class="tag">PrimeVue</span><span class="tag">MySQL</span><span class="tag">xUnit</span><span class="tag">GitHub Actions</span><span class="tag">Azure</span></div>
+            </article>
+
+            <article class="proj">
+              <span class="kind" data-i18n="p2.kind">Microservicios · jul – sep 2026</span>
+              <h3>Optica Ecosystem</h3>
+              <p data-i18n="p2.desc">Monorepo de 7 microservicios que reemplaza el monolito de forma incremental. Además de programar, revisé e integré los PRs de todo el equipo.</p>
+              <div class="num"><span data-i18n="p2.n1"><b>589</b> commits directos</span><span data-i18n="p2.n2"><b>+123K</b> líneas</span><span data-i18n="p2.n3"><b>3 300+</b> archivos</span></div>
+              <ul>
+                <li data-i18n="p2.l1"><b>Multitenancy</b> por <code>empresa_id</code> con query filters globales de EF Core, replicada en Tickets, Pacientes y Ventas, con pruebas de aislamiento entre empresas.</li>
+                <li data-i18n="p2.l2"><b>Estandarización de permisos RBAC</b> con el atributo <code>[RequierePermiso]</code> y validación al arrancar el servicio.</li>
+                <li data-i18n="p2.l3"><b>Módulo SAC</b> construido desde cero: bandeja Kanban, timeline del caso, adjuntos y catálogos jerárquicos.</li>
+                <li data-i18n="p2.l4"><b>Programa de referidos</b> "Familia y Amigos": motor de cupones, landing pública y panel CRM con reportes.</li>
+                <li data-i18n="p2.l5">Generación de órdenes en lote en paralelo, lo que eliminó los timeouts.</li>
+              </ul>
+              <div class="tags"><span class="tag">CQRS-lite</span><span class="tag">YARP</span><span class="tag">JWT</span><span class="tag">Docker Compose</span><span class="tag">Azure App Service</span><span class="tag">ADR</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ARQUITECTURA ================= -->
+    <section id="arquitectura" aria-labelledby="t-arq">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="arch.eyebrow">Arquitectura</p>
+        <h2 id="t-arq" data-i18n="arch.title">Cómo se migró el sistema</h2>
+        <p class="lede" data-i18n="arch.lede">Se usó el patrón <i>strangler fig</i>: cada módulo pasa del monolito a su propio servicio mientras el sistema sigue en producción. Un gateway enruta cada petición al servicio que ya la atiende.</p>
+      </div>
+
+      <div class="diagram" role="img" aria-label="OpticaSystemGLD → strangler fig → API Gateway YARP → 7 microservicios" data-i18n-attr="aria-label:arch.diagramLabel">
+        <div class="node">
+          <div class="t">OpticaSystemGLD</div>
+          <div class="s" data-i18n="arch.mono">Monolito .NET 9<br>Clean Architecture · 4 capas<br>~70 tablas MySQL<br>29 controllers · 55 entidades</div>
+        </div>
+        <div class="arrow">
+          <svg viewBox="0 0 64 20" aria-hidden="true"><path class="flow" d="M2 10 H62" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="5 5"/><path d="M60 4 L68 10 L60 16" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          strangler<br>fig
+        </div>
+        <div class="eco">
+          <div class="gw" data-i18n="arch.gw"><b>API Gateway</b> · YARP · JWT compartido</div>
+          <div class="svcs">
+            <div class="svc">auth</div><div class="svc">pacientes</div><div class="svc">laboratorio</div><div class="svc">tickets</div>
+            <div class="svc">ventas</div><div class="svc">rrhh</div><div class="svc">inventario</div><div class="svc">frontends</div>
+          </div>
+          <div class="shared" data-i18n="arch.shared">Optica.Shared: contratos, eventos y tenancy · scripts SQL idempotentes como fuente única del esquema</div>
+        </div>
+      </div>
+
+      <figure class="chart" style="margin-inline:0">
+        <h3 data-i18n="chart.title">Dónde trabajé en el ecosistema</h3>
+        <p class="small" data-i18n="chart.sub">Archivos tocados en commits propios, por servicio (aprox.)</p>
+        <div id="bars"></div>
+        <div class="legend">
+          <span><i style="background:var(--amber)"></i><span data-i18n="chart.fe">Frontend</span></span>
+          <span><i style="background:var(--accent)"></i><span data-i18n="chart.be">Backend / datos</span></span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ================= DOMINIOS ================= -->
+    <section aria-labelledby="t-dom">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="dom.eyebrow">Por dominio de negocio</p>
+        <h2 id="t-dom" data-i18n="dom.title">Funcionalidades destacadas</h2>
+      </div>
+      <div class="domains">
+        <div class="dom"><h3 data-i18n="dom.lab">Laboratorio</h3><ul>
+          <li data-i18n="dom.lab1">Encargos y solicitudes externas con impresión idéntica a la del sistema anterior</li>
+          <li data-i18n="dom.lab2">Integración ACEP para medidas de armazón, con auditoría y validación por empresa</li>
+          <li data-i18n="dom.lab3">Desactivación de manifiestos con registro de eventos, sin borrado físico</li>
+        </ul></div>
+        <div class="dom"><h3 data-i18n="dom.sac">Servicio al cliente</h3><ul>
+          <li data-i18n="dom.sac1">Casos SAC con Kanban por sucursal y agente</li>
+          <li data-i18n="dom.sac2">Permisos distintos para Agente CC y Agente SAC</li>
+          <li data-i18n="dom.sac3">Migración de "Gestiones" a Tickets y reasignación al fusionar pacientes duplicados</li>
+        </ul></div>
+        <div class="dom"><h3 data-i18n="dom.sales">Ventas y facturación</h3><ul>
+          <li data-i18n="dom.sales1">Pagos mixtos e impuestos resueltos según SAP Business One</li>
+          <li data-i18n="dom.sales2">Autocompletado de clientes desde Hacienda (Costa Rica y El Salvador)</li>
+          <li data-i18n="dom.sales3">Validación de graduación del lente al facturar</li>
+        </ul></div>
+        <div class="dom"><h3 data-i18n="dom.pat">Pacientes</h3><ul>
+          <li data-i18n="dom.pat1">Migración del expediente de medicina general</li>
+          <li data-i18n="dom.pat2">Rediseño del formulario de examen visual con panel de configuración dinámico</li>
+          <li data-i18n="dom.pat3">Unificación de pacientes duplicados</li>
+        </ul></div>
+        <div class="dom"><h3 data-i18n="dom.auth">Auth y RBAC</h3><ul>
+          <li data-i18n="dom.auth1">Migración a producción de 52 usuarios "Agente CC", con verificación de su sucursal asignada</li>
+          <li data-i18n="dom.auth2">Catálogo de permisos por servicio</li>
+          <li data-i18n="dom.auth3">Validaciones al arrancar que detectan configuraciones inválidas</li>
+        </ul></div>
+        <div class="dom"><h3 data-i18n="dom.qa">Calidad</h3><ul>
+          <li data-i18n="dom.qa1">Pruebas de aislamiento multitenant, que el equipo usa como referencia para servicios nuevos</li>
+          <li data-i18n="dom.qa2">Corrección de tests inestables por zona horaria (UTC vs. hora de Costa Rica)</li>
+          <li data-i18n="dom.qa3">Documentación como código: CLAUDE.md, ADRs y specs de diseño</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <!-- ================= ADRs ================= -->
+    <section aria-labelledby="t-adr">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="adr.eyebrow">Decisiones de arquitectura</p>
+        <h2 id="t-adr" data-i18n="adr.title">Decisiones que ayudé a tomar</h2>
+        <p class="lede" data-i18n="adr.lede">Cada decisión quedó registrada como un Architecture Decision Record (ADR) versionado junto al código.</p>
+      </div>
+      <div class="adrs">
+        <div class="adr"><span class="id">ADR-0010</span><h3 data-i18n="adr.a1t">Estrategia de multitenancy</h3><p data-i18n="adr.a1">Aislamiento por <code>empresa_id</code> con filtros globales de EF Core, respaldado por <code>TenantIsolationTests</code>.</p></div>
+        <div class="adr"><span class="id">ADR-0017</span><h3 data-i18n="adr.a2t">Taxonomía de permisos RBAC</h3><p data-i18n="adr.a2">Lideré la migración de Auth y RRHH de roles ad-hoc a un catálogo estandarizado de permisos.</p></div>
+        <div class="adr"><span class="id">ADR-0004 · 0006 · 0009</span><h3 data-i18n="adr.a3t">Una base de datos por servicio</h3><p data-i18n="adr.a3">Propiedad de datos por servicio y eliminación de foreign keys heredadas del monolito.</p></div>
+        <div class="adr"><span class="id">ADR-0018</span><h3 data-i18n="adr.a4t">Gestiones pasa a Tickets</h3><p data-i18n="adr.a4">El módulo de Gestiones pasa a ser propiedad del servicio de Tickets.</p></div>
+      </div>
+    </section>
+
+    <!-- ================= STACK ================= -->
+    <section id="stack" aria-labelledby="t-stack">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="stack.eyebrow">Herramientas</p>
+        <h2 id="t-stack" data-i18n="stack.title">Stack técnico</h2>
+      </div>
+      <div class="stack">
+        <div><h3>Backend</h3><ul><li>C# · .NET 9 / 8</li><li>ASP.NET Core Web API · MVC</li><li>Entity Framework Core</li><li>CQRS-lite · Clean Architecture</li><li>JWT · BCrypt · AES-GCM</li><li>Java · PHP · Python</li></ul></div>
+        <div><h3>Frontend</h3><ul><li>Vue 3 + TypeScript</li><li>React · Vite</li><li>PrimeVue · Pinia · Vue Router</li><li>Tailwind CSS · Razor</li><li>FullCalendar · jsbarcode</li></ul></div>
+        <div><h3 data-i18n="stack.data">Datos</h3><ul><li>MySQL 8 (Azure)</li><li>SQL Server</li><li data-i18n="stack.d3">Scripts SQL idempotentes</li><li data-i18n="stack.d4">Procedimientos almacenados</li><li>ClosedXML · QuestPDF</li></ul></div>
+        <div><h3 data-i18n="stack.devops">DevOps y proceso</h3><ul><li>GitHub Actions · CI/CD</li><li>Azure App Service · Static Web Apps</li><li>Docker Compose · YARP</li><li>xUnit · Conventional Commits</li><li>Scrum · Azure DevOps</li></ul></div>
+      </div>
+    </section>
+
+    <!-- ================= ACADÉMICOS ================= -->
+    <section id="academicos" aria-labelledby="t-acad">
+      <div class="sec-head">
+        <p class="eyebrow">Universidad Técnica Nacional</p>
+        <h2 id="t-acad" data-i18n="acad.title">Proyectos académicos</h2>
+      </div>
+      <div class="acad">
+        <article><div><div class="tt">JarasTech</div><div class="st">C# · WinForms .NET 4.8 · SQL Server · API BCCR</div></div>
+          <p data-i18n="acad.a1">Sistema de ventas de tecnología con 5 módulos: productos, inventario, facturación, firma digital y usuarios. Tiene arquitectura Factory/DAL/BLL, un esquema de 20 tablas con procedimientos almacenados, tipo de cambio en tiempo real desde la API del BCCR, facturas PDF con QuestPDF y logs con log4net.</p></article>
+        <article><div><div class="tt">Urban Flame</div><div class="st">ASP.NET Core MVC (.NET 8) · EF Core · AutoMapper</div></div>
+          <p data-i18n="acad.a2">App web de pedidos para restaurante. Implementé el CRUD completo de Combos a través de las 4 capas de una arquitectura N-layer, con los patrones repository y service para que el módulo se pudiera probar de forma aislada, y corregí errores en el layout compartido.</p></article>
+        <article><div><div class="tt">E-desk</div><div class="st">React · Vite · MySQL · API REST</div></div>
+          <p data-i18n="acad.a3">Gestión de tickets de soporte. Diseñé el esquema y los endpoints para crear tickets, dar seguimiento a su estado y resolverlos, con una interfaz responsiva para personal que atiende varios tickets a la vez.</p></article>
+        <article><div><div class="tt">SISAE</div><div class="st" data-i18n="acad.a4st">Scrum · Ingeniería de requisitos · Riesgos</div></div>
+          <p data-i18n="acad.a4">Entregables Scrum del Sprint 2 (backlogs, retrospectiva y registro de riesgos) y estudios de prefactibilidad y factibilidad para una plataforma de pedidos.</p></article>
+      </div>
+    </section>
+
+    <!-- ================= EDUCACIÓN ================= -->
+    <section aria-labelledby="t-edu">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="edu.eyebrow">Formación</p>
+        <h2 id="t-edu" data-i18n="edu.title">Educación y certificaciones</h2>
+      </div>
+      <div class="edu">
+        <div>
+          <div class="item"><b data-i18n="edu.e1">Bachillerato en Ingeniería en Software</b><span data-i18n="edu.e1s">Universidad Técnica Nacional · 2023 – 2027 (esperado)</span></div>
+          <div class="item"><b data-i18n="edu.e2">Técnico Medio en Redes</b><span>CTP Francisco J. Orlich · 2020 – 2022</span></div>
+        </div>
+        <div>
+          <div class="item"><b>JavaScript Essentials 2</b><span>Cisco Networking Academy · 2026</span></div>
+          <div class="item"><b>HTML Essentials · JavaScript Essentials 1</b><span>Cisco Networking Academy · 2025</span></div>
+          <div class="item"><b>Data Analytics Essentials</b><span>Cisco Networking Academy · 2024</span></div>
+          <div class="item"><b>Python Essentials 1</b><span>Cisco Networking Academy · 2023</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <footer id="contacto" class="footer">
+      <p class="eyebrow" data-i18n="foot.eyebrow">Contacto</p>
+      <h2 data-i18n="foot.title">¿Buscas un desarrollador full-stack?</h2>
+      <div class="contact">
+        <button class="chip" type="button" data-copy="jaradereck1@gmail.com">jaradereck1@gmail.com <span aria-hidden="true">⧉</span></button>
+        <a class="chip" href="mailto:jaradereck1@gmail.com" data-i18n="foot.write">Escribir correo</a>
+        <a class="chip" href="https://github.com/DereckJN" target="_blank" rel="noopener">github.com/DereckJN ↗</a>
+        <span class="chip">+506 6357-5896</span>
+      </div>
+      <p class="small"><span data-i18n="foot.note">Las cifras salen del historial de Git de cada repositorio (julio – septiembre 2026).</span> © <span id="year">2026</span> Dereck Jara Núñez</p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
